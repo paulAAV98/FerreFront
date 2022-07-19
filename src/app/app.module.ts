@@ -12,20 +12,28 @@ import {HttpClientModule} from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component'
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { InicioComponent } from './inicio/inicio.component';
+import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TarjetaComponent } from './tarjeta/tarjeta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListarComponent,
     ListarProComponent,
-    NavbarComponent
+    NavbarComponent,
+    InicioComponent,
+    LoginComponent,
+    TarjetaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]

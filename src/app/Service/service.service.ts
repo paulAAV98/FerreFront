@@ -19,5 +19,7 @@ export class ServiceService {
 
     return this.http.post<String[]>(this.Urlp,producto)
 
-  };
+  }
+
+  
 }
